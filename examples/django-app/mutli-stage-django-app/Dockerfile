@@ -15,7 +15,7 @@ FROM gcr.io/distroless/python3
 WORKDIR /app
 ENV PYTHONPATH=/python-packages
 
-# Copy virtual environment
+# Copy python packages
 COPY --from=builder /python-packages /python-packages
 
 # Copy application code
